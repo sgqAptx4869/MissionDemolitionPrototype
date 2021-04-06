@@ -1,0 +1,4 @@
+repository "MissionDemolitionPrototype@ssl://snowices@sh02-plasticscm.unity.cn:8787"
+  path "/"
+    smartbranch "/main/470786431" 
+     
