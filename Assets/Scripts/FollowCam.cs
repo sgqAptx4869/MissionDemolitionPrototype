@@ -20,12 +20,35 @@ public class FollowCam : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // if (POI == null)
+        // {
+        //     return;
+        // }
+        // //获取兴趣点的位置
+        // Vector3 destination = POI.transform.position;
+        Vector3 destination;
+        //如果兴趣点不存在 返回原点
         if (POI == null)
         {
-            return;
+            destination = Vector3.zero;
         }
-        //获取兴趣点的位置
-        Vector3 destination = POI.transform.position;
+        else
+        {
+            //获取兴趣点位置
+            destination = POI.transform.position;
+            //如果兴趣点是一个projectile实例 检查他是否已经静止
+            if (POI.CompareTag("Projectile"))
+            {
+                //如果处于sleeping状态（静止）
+                if (POI.GetComponent<Rigidbody>().IsSleeping())
+                {
+                    //返回默认视图
+                    POI = null;
+                    //下一次更新时
+                    return;
+                }
+            }
+        }
         destination.x = Mathf.Max(minXY.x, destination.x);
         destination.y = Mathf.Max(minXY.y, destination.y);
 
