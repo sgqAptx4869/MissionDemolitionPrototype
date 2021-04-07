@@ -394,7 +394,7 @@ Halo:
   m_Color:
     serializedVersion: 2
     rgba: 4290756543
-  m_Size: 3
+  m_Size: 3.5
 --- !u!1 &401418536
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,7 +543,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 10.521783
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1461,7 +1461,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865300042}
   m_LocalRotation: {x: 0, y: -0.13052624, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: -10, y: -10, z: 0}
+  m_LocalPosition: {x: -8.9, y: -10, z: 0.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1124303197}
@@ -1482,7 +1482,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 3.5
   m_Center: {x: 0, y: 4, z: 0}
 --- !u!114 &1865300048
 MonoBehaviour:
